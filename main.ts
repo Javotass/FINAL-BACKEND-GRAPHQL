@@ -14,6 +14,7 @@ if (!MONGO_URL) {
 const mongoClient = new MongoClient(MONGO_URL);
 await mongoClient.connect();
 
+
 console.info("Connected to MongoDB");
 
 const mongoDB = mongoClient.db(""); //base datos
